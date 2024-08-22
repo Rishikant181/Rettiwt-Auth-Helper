@@ -5,7 +5,7 @@
 	"description": "Helps authenticating Rettiwt-API",
 	"permissions": ["cookies", "storage"],
 	"host_permissions": ["*://x.com/*"],
-	"incognito": "split",
+	"incognito": "spanning",
 	"background": {
 		"scripts": ["js/background.js"]
 	},
