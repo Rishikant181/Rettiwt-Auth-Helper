@@ -11,6 +11,7 @@
 	},
 	"packageManager": "yarn@4.4.0",
 	"devDependencies": {
+		"@types/firefox-webext-browser": "^120.0.4",
 		"@types/node": "20.4.1",
 		"@typescript-eslint/eslint-plugin": "6.0.0",
 		"@typescript-eslint/parser": "6.0.0",

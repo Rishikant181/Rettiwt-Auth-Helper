@@ -161,6 +161,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/firefox-webext-browser@npm:^120.0.4":
+  version: 120.0.4
+  resolution: "@types/firefox-webext-browser@npm:120.0.4"
+  checksum: 10c0/75982a9c2dfdec8808a5a2356ff11e221d7891aebdb8e5c74cfcf6ac2ccd260dfd4b6b79ec99c214e17d1e6b1a6ff391a8dd0b569ba822c22246b4e6b5aaea34
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.11":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
@@ -318,6 +325,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "Rettiwt-Auth-Helper@workspace:."
   dependencies:
+    "@types/firefox-webext-browser": "npm:^120.0.4"
     "@types/node": "npm:20.4.1"
     "@typescript-eslint/eslint-plugin": "npm:6.0.0"
     "@typescript-eslint/parser": "npm:6.0.0"
