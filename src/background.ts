@@ -1,7 +1,3 @@
-browser.runtime.onInstalled.addListener(() => {
-	console.log('Rettiwt-Auth Helper installed!');
-});
-
 /**
  * The domain whose cookies are to be fetched.
  */
