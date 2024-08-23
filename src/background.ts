@@ -11,8 +11,16 @@ const domain = 'x.com';
  * Gets cookies for x.com and stores them temporarily in local storage.
  */
 async function getCookies(): Promise<string> {
-	// Getting the cookies for the given domain
-	let cookies = await browser.cookies.getAll({ domain: domain });
+	// Getting the active tab
+	const activeTab = (await browser.tabs.query({ currentWindow: true, active: true }))[0].id!;
+
+	// Getting the cookie store for the active tab
+	const cookieStore = (await browser.cookies.getAllCookieStores()).filter((store) =>
+		store.tabIds.includes(activeTab),
+	)[0].id;
+
+	// Getting the cookies for the given domain from the cookie store
+	let cookies = await browser.cookies.getAll({ domain: domain, storeId: cookieStore });
 
 	// Filter out required cookies
 	cookies = cookies.filter(
