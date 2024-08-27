@@ -1,5 +1,4 @@
 {
-	"manifest_version": 3,
 	"name": {
 		"en-US": "Rettiwt-Auth Helper",
 		"_default": "en-US"
@@ -26,14 +25,5 @@
 		"gecko": {
 			"id": "rettiwt-auth-helper@rishikant181.com"
 		}
-	},
-	"permissions": ["cookies", "storage", "tabs"],
-	"host_permissions": ["*://x.com/*"],
-	"incognito": "spanning",
-	"background": {
-		"scripts": ["js/background.js"]
-	},
-	"action": {
-		"default_popup": "pages/popup.html"
 	}
 }
