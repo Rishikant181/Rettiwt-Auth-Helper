@@ -2,7 +2,17 @@
 	"manifest_version": 3,
 	"name": "Rettiwt-Auth Helper",
 	"version": "1.0",
-	"description": "Helps authenticating Rettiwt-API",
+	"description": "A browser extension for authenticating Rettiwt-API.",
+	"summary": "Easily get the API key for authenticating Rettiwt-API, with the click of a button.",
+	"categories": {
+		"firefox": ["web-development", "websites"]
+	},
+	"homepage": "https://rishikant181.github.io/Rettiwt-API/",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "rettiwt-auth-helper@rishikant181.com"
+		}
+	},
 	"permissions": ["cookies", "storage", "tabs"],
 	"host_permissions": ["*://x.com/*"],
 	"incognito": "spanning",
