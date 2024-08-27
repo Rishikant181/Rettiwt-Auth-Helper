@@ -1,24 +1,24 @@
 {
 	"name": {
-		"en-US": "Rettiwt-Auth Helper",
-		"_default": "en-US"
+		"en-US": "Rettiwt-Auth Helper"
 	},
 	"version": {
-		"license": "MPL2.0"
+		"license": "MPL-2.0"
 	},
 	"description": {
-		"en-US": "A browser extension for authenticating Rettiwt-API.",
-		"_default": "en-US"
+		"en-US": "A browser extension for authenticating Rettiwt-API."
 	},
 	"summary": {
-		"en-US": "Easily get the API key for authenticating Rettiwt-API, with the click of a button.",
-		"_default": "en-US"
+		"en-US": "Easily get the API key for authenticating Rettiwt-API, with the click of a button."
 	},
-	"categories": {
-		"firefox": ["web-development", "websites"]
-	},
+	"categories": [
+		{
+			"name": "Web Development",
+			"slug": "web-development",
+			"type": "extension"
+		}
+	],
 	"homepage": {
-		"en-US": "https://rishikant181.github.io/Rettiwt-API/",
-		"_default": "en-US"
+		"en-US": "https://rishikant181.github.io/Rettiwt-API/"
 	}
 }
