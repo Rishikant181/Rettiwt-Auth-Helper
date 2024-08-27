@@ -29,4 +29,5 @@ jobs:
             - run: yarn run build
 
             # Publishing to AMO
-            - run: web-ext sign --channel=listed --amo-metadata=./public/manifest.json --api-key=${{secrets.moz_api_key}} --api-secret=${{secrets.moz_api_secret}}
+            - run: web-ext sign --channel=listed --amo-metadata=manifest.json --api-key=${{secrets.moz_api_key}} --api-secret=${{secrets.moz_api_secret}}
+              working-directory: public
