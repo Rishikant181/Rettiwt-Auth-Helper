@@ -20,10 +20,5 @@
 	"homepage": {
 		"en-US": "https://rishikant181.github.io/Rettiwt-API/",
 		"_default": "en-US"
-	},
-	"browser_specific_settings": {
-		"gecko": {
-			"id": "rettiwt-auth-helper@rishikant181.com"
-		}
 	}
 }
