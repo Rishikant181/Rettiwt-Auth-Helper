@@ -1,0 +1,32 @@
+name: Publish
+run-name: Publishing the extension to AMO
+
+on:
+    release:
+        types: [released]
+
+jobs:
+    # Packages and publishes the extension to AMO
+    publish-npm:
+        runs-on: ubuntu-latest
+        steps:
+            # Setting up Node
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: '20.x'
+
+            # Installing Web-Ext
+            - run: npm install -g web-ext@8.2.0
+
+            # Enabling CorePack
+            - run: corepack enable
+
+            # Installing dependencies
+            - run: yarn
+
+            # Compiling the source
+            - run: yarn run build
+
+            # Publishing to AMO
+            - run: web-ext sign --channel=listed --amo-metadata=public/manifest.json --api-key=${{secrets.moz_api_key}} --api-secret=${{secrets.moz_api_secret}}
